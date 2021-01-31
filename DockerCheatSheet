@@ -1,0 +1,25 @@
+DOCKER:
+
+docker ps
+docker ps --all
+docker run <image name>
+docert stop <container id/name>
+docker start < container id/name>
+docker exec -it <container name> <cmd>
+docker run -d <image name>
+docker build -t <name> .
+docker push <accountName/imagename>
+docker kill <container id/name>
+docker rm <container id/name> - remove containers
+docker rmi <image name> = remove images
+docker pull <image name>
+docker run -p 80:5000 webapp
+
+Map a volume on your local disk to volume on a docker container:
+docker run -v /opt/datadir:/var/lib/mysql <mysql>
+
+Details on a container:
+docker inspect <container id/name>
+
+Logs:
+docker logs <container id/name>
